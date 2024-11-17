@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Shop online</title>
+		<link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" href="./Imagenes/shopping-cart_7385250.png">
+	</head>
+	<body>
+		<header>
+			<h1>Shop online</h1>
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Hoddie</p>
+								<span class="precio-producto-carrito">$110</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"/>
+							</svg>
+						</div>
+					</div>
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">Cart is empty</p>
+				</div>
+			</div>
+			<!-- Agregar SweetAlert CSS y JS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="./Imagenes/8.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Black hoddie</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Add to cart</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./Imagenes/5.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>White Hoodie</h2>
+					<p class="price">$120</p>
+					<button class="btn-add-cart">Add to cart</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./Imagenes/25.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Purple hoodie</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Add to cart</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./Imagenes/2.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Brown hoodie</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Add to cart</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./Imagenes/22.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Pink hoodie</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Add to cart</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./Imagenes/23.webp"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Brown sweater</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Add to cart</button>
+				</div>
+			</div>
+		</div>
+		<script src="./index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</body>
+</html>
